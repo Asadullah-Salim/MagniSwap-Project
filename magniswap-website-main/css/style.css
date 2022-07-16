@@ -817,6 +817,12 @@ p.large {
   .header .btn {
     display: none;
   }
+  .header-anv {
+    display: none;
+  }
+  .head-hie{
+    display: block !important;
+  }
   .header .hamburger {
     display: block;
     z-index: 9999;
@@ -1167,3 +1173,38 @@ body {
       font-family: inherit;
   }
   }
+
+  div#google_translate_element_div div.goog-te-gadget-simple {
+    display: inline-block;
+    background: linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%);
+    border-radius: 2.5rem;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    }
+  
+  div#google_translate_element_div div.goog-te-gadget-simple {
+    background:linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%);
+    }
+  
+  div#google_translate_element_div div.goog-te-gadget-simple a.goog-te-menu-value span {
+    color: #000000;
+    }
+
+  
+  div#google_translate_element_div div.goog-te-gadget-simple {
+        border: none;
+    }
+
+  @media (max-width: 767px){
+    div#google_translate_element_div div.goog-te-gadget-simple {
+        font-size: 12.6061px;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        line-height: 15px;
+        display: table;
+        padding: 0.8rem 1.5rem;
+        font-family: inherit;
+    }
+    }
