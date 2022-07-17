@@ -20,7 +20,12 @@ body {
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.5;
 }
-
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{
+color:black !important;
+}
+.nav ul li a {
+ font-size:17px;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -817,12 +822,6 @@ p.large {
   .header .btn {
     display: none;
   }
-  .header-anv {
-    display: none;
-  }
-  .head-hie{
-    display: block !important;
-  }
   .header .hamburger {
     display: block;
     z-index: 9999;
@@ -897,6 +896,9 @@ p.large {
   .md_d-none {
     display: none;
   }
+.navlists{
+display:unset !important;
+}
   .lg_d-none {
     display: block;
   }
@@ -1163,6 +1165,9 @@ body {
   top: 0px !important; 
   }
 @media (max-width: 767px){
+.hidenav{
+ display:flex !important;
+}
   div#google_translate_element div.goog-te-gadget-simple {
       font-size: 12.6061px;
       font-weight: 700;
@@ -1174,37 +1179,56 @@ body {
   }
   }
 
-  div#google_translate_element_div div.goog-te-gadget-simple {
-    display: inline-block;
-    background: linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%);
-    border-radius: 2.5rem;
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
     border: none;
-    padding: 0.8rem 1.5rem;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    }
+    cursor: pointer;
+  }
   
-  div#google_translate_element_div div.goog-te-gadget-simple {
-    background:linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%);
-    }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
   
-  div#google_translate_element_div div.goog-te-gadget-simple a.goog-te-menu-value span {
-    color: #000000;
-    }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
 
-  
-  div#google_translate_element_div div.goog-te-gadget-simple {
-        border: none;
-    }
+  .goog-te-menu-frame{
+    width: 135px !important;
+    border-radius: 10px !important;
+    border: none;
+  }
 
-  @media (max-width: 767px){
-    div#google_translate_element_div div.goog-te-gadget-simple {
-        font-size: 12.6061px;
-        font-weight: 700;
-        border-radius: 2.5rem;
-        line-height: 15px;
-        display: table;
-        padding: 0.8rem 1.5rem;
-        font-family: inherit;
-    }
-    }
+  div#\:1\.menuBody.goog-te-menu{
+
+    width: 175px !important;
+    background: linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%) !important;
+ }
+
+ #\:1\.menuBody.goog-te-menu table tbody tr td{
+  background: linear-gradient(180.08deg, #ffedce 0.11%, #f0c868 52.75%, #d09a5d 96.4%, #e5b864 123.36%) !important;
+ }
